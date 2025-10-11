@@ -34,6 +34,11 @@ QR-Generator/
 
 ---
 
+## 🌐 Live Demo
+Check out the live QR Code Generator here: https://qr-generator-opal-phi.vercel.app/
+
+---
+
 ## 📸 Screenshot
 
 Here’s how the QR Code Generator looks:
