@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator</title>
+
+  <!-- Link your stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Font for Poppins (as used in CSS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <p>Enter your text or URL</p>
+    <input type="text" id="qrText" placeholder="Enter text or URL">
+    <div id="imgBox">
+      <img src="" id="qrImage" alt="Generated QR Code">
+    </div>
+    <button onclick="generateQR()">Generate QR Code</button>
+  </div>
+
+  <script>
+    const imgBox = document.getElementById("imgBox");
+    const qrImage = document.getElementById("qrImage");
+    const qrText = document.getElementById("qrText");
+
+    function generateQR() {
+      const value = qrText.value.trim();
+
+      if (!value) {
+        alert("Please enter some text or URL!");
+        imgBox.classList.remove("show-img");
+        qrImage.removeAttribute("src");
+        return;
+      }
+
+      // Encode safely and handle multiple generations
+      const encoded = encodeURIComponent(value.replace(/\n/g, ' '));
+      const apiURL = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encoded}&t=${Date.now()}`;
+
+      // Set image and animate display
+      qrImage.src = apiURL;
+      imgBox.classList.add("show-img");
+    }
+  </script>
+</body>
+</html>
