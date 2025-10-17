@@ -1,6 +1,6 @@
 # 🎉 QR Code Generator
 
-A **simple and stylish QR Code Generator** built with **HTML & CSS**!  
+A **simple and stylish QR Code Generator** built with **HTML, CSS and JavaScript**!  
 Easily generate QR codes for any text or URL. Scan with your phone 📱 and share instantly!  
 
 ---
