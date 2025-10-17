@@ -7,7 +7,7 @@ Easily generate QR codes for any text or URL. Scan with your phone 📱 and shar
 
 ## ✨ Features
 - 📝 Generate QR codes for URLs or text  
-- 💻 Fully built with **HTML & CSS** (No JavaScript!)  
+- 💻 Fully built with **HTML, CSS and JavaScript** 
 - 📱 Responsive and user-friendly design  
 - ⚡ Lightweight and easy to use  
 
@@ -16,21 +16,23 @@ Easily generate QR codes for any text or URL. Scan with your phone 📱 and shar
 ## 🚀 How to Use
 1. Open `index.html` in your browser 🌐  
 2. Enter the text or URL you want to convert into a QR code  
-3. Copy or scan the QR code with your device 📲  
+3. Click on **Generate QR Code**  
+4. Copy or scan the generated QR code with your device 📲  
 
 ---
 
 ## 📁 Folder Structure
-QR-Generator/
 │
 ├── index.html
 ├── style.css
+├── script.js (if you saved your JavaScript separately)
 └── README.md
 ---
 
 ## 🛠️ Tech Stack
 - **HTML** – Structure  
-- **CSS** – Styling & Layout  
+- **CSS** – Styling & Layout
+- **JavaScript** – Logic for generating QR codes  
 
 ---
 
